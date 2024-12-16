@@ -99,7 +99,7 @@ with interaction_column:
     if user_message and is_valid_url(user_message):
         append_user_message(user_message)
 
-        with st.spinner("Summarising the article..."):
+        with st.spinner("Processing the article..."):
             assistant_message = process_article(user_message)
             if assistant_message:
                 append_assistant_message(assistant_message)
